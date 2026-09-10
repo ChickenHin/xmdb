@@ -1,22 +1,7 @@
 name: CMake on Linux
 
 on:
-  push:
-    branches: [ "production", "development" ]
-    paths:
-      - '**/*.cpp'
-      - '**/*.hpp'
-      - '**/*.h'
-      - '**/CMakeLists.txt'
-      - '**.cmake'
-  pull_request:
-    branches: [ "production", "development" ]
-    paths:
-      - '**/*.cpp'
-      - '**/*.hpp'
-      - '**/*.h'
-      - '**/CMakeLists.txt'
-      - '**.cmake'
+ workflow_dispatch: 
 
 env:
   BUILD_TYPE: Debug
